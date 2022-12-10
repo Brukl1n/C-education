@@ -4,7 +4,7 @@ Console.WriteLine("Привет! Эта программа принимает н
 Console.WriteLine(" ");
 
 Console.Write("Введите пятизначное число: ");
-int num = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine()!);
 int buf = 0;
 
 if(num > 9999 && num < 100000) {
