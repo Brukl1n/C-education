@@ -4,12 +4,15 @@
 
 int[] CreateArray(int arraySize) {
     int[] array = new int[arraySize];
+
+    Console.Write("Числа в массиве: ");
+
     for(int i = 0; i < arraySize - 1; i++) {
         array[i] = new Random().Next(100, 1000);
         Console.Write(array[i] + ", ");
     }
     array[arraySize - 1] = new Random().Next(100, 1000);
-    Console.Write(array[arraySize - 1] + " ");
+    Console.Write(array[arraySize - 1] + ".");
     Console.WriteLine(" ");
     return array;
 }
@@ -38,5 +41,4 @@ Console.Write("Введите размер массива: ");
 int size = int.Parse(Console.ReadLine()!);
 Console.WriteLine(" ");
 
-Console.Write("Числа в массиве: ");
 PrintCountEvenNumbers(CountingEvenNumbers(CreateArray(size)));
